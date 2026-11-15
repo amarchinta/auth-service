@@ -41,6 +41,7 @@ public class User {
     @Column(nullable = false, length = 20)
     private Role role;
 
+    @Builder.Default
     @Column(nullable = false)
     private boolean enabled = true;
 
